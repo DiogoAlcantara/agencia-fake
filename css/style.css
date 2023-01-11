@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Resete CSS */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilizando o body da página */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* Posicionando o menu de navegação */
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  height: 120px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+/* Posicionando e estilizando o logo do menu */
+.logo {
+  flex: 20%;
+  margin-left: 10%;
+  text-align: left;
+  color: #180f4a;
+  font-size: 34px;
+}
+
+.logo h1 {
+  font-family: "Lobster", cursive;
+}
+
+/* Posicionando a div que segura os links */
+.menu {
+  flex: 70%;
+  text-align: right;
+  padding: 20px;
+}
+
+/* Estilizando os links do menu */
+.menu a {
+  color: #180f4a;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 16px;
+}
+
+/* Efeito de hover quando o mouse estiver sob os links */
+.menu a:hover {
+  color: #ff2978;
+  border-bottom: 4px solid #180f4a;
+}
+
+/* Estilizando o botão */
+#botao {
+  background-color: #180f4a;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+/* Efeito de hover quando o mouse estiver sob o botão */
+#botao:hover {
+  border: none;
+  background-color: #ff2978;
+}
+
+/* Posicionando o header da página */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+/* Posicionando a Headline */
+.headline {
+  flex: 40%;
+  margin-left: 10%;
+  /* border: 1px solid black; */
+  text-align: left;
+}
+
+.headline h2:first-child {
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: #180f4a;
+  padding: 0;
+  margin: 0;
+}
+
+.headline h2:nth-child(2) {
+  font-weight: 900;
+  font-size: 70px;
+  color: #180f4a;
+  padding: 0;
+  margin: 0;
+}
+
+.headline p {
+  color: gray;
+  text-align: left;
+  font-size: 18px;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: #fa9d4d;
+  padding: 15px;
+  color: #180f4a;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  background-color: #180f4a;
+  color: #fa9d4d;
+  font-weight: bold;
+}
+
+/* Posicionando a Headline */
+.img-headline {
+  margin-right: 10%;
+  flex: 40%;
+  /* border: 1px solid yellow; */
+}
+
+/* Definindo o tamanho da imagem */
+.img-headline img {
+  max-width: 100%;
+}
+
+/* Posicionando e configurando o conteúdo principal */
+.main-content {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  padding: 5%;
+}
+
+/* Estilizando o titulo */
+.main-content h2 {
+  width: 100%;
+  font-size: 50px;
+  margin: 0;
+  color: #180f4a;
+}
+
+/* Posicionando os cards */
+.servicos {
+  display: inline-block;
+  margin-top: 5%;
+}
+
+/* Estilizando o conteúdo do card */
+.card {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 1%;
+  border: 1px solid #ff2978;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Sumindo com o texto oculto */
+.texto-oculto {
+  display: none;
+}
+
+/* Aplicando efeito de hover quando o mouse estiver sob o card */
+.card:hover {
+  background-color: #ff2978;
+  color: white;
+  padding: 40px;
+}
+
+/* Sumindo com a imagem quando o mouse estiver sob o card */
+.card:hover img {
+  display: none;
+}
+
+/* Sumindo com o texto original quando a imagem estiver sob o card */
+.card:hover .card-text {
+  display: none;
+}
+
+/* Trocando o texto quando o mouse estiver sob o card */
+.card:hover .texto-oculto {
+  display: inline-block;
+}
+
+/* Estilizando o rodapé do site */
+footer {
+  margin-top: 100px;
+  height: 400px;
+  background-image: linear-gradient(180deg, #180f4a, #090422, black);
+  text-align: center;
+  border-top: 5px solid #ff2978;
+}
+
+.logo-rodape {
+  padding: 100px;
+  color: white;
+}
+
+.agencia {
+  color: white;
+  font-size: 34px;
+  font-family: "Lobster", cursive;
+}
+
+.whats-icon {
+  position: fixed;
+  right: 5px;
+  bottom: 10px;
+  width: 80px;
+  height: 80px;
+}
